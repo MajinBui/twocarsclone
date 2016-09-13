@@ -60,7 +60,6 @@ public abstract class AbstractToken extends AbstractGameObject {
                 isBlinking = (isBlinking ? false : true);
             }
         }, 0 ,BLINK_INTERVAL);
-        Gdx.app.debug(TAG, "setBlinkSchedule");
     }
 
     public boolean isBlinking() {
