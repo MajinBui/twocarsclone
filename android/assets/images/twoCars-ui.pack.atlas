@@ -1,0 +1,41 @@
+
+twoCars-ui.pack.png
+size: 256,512
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+background
+  rotate: false
+  xy: 2, 84
+  size: 240, 424
+  orig: 240, 424
+  offset: 0, 0
+  index: -1
+options_button
+  rotate: false
+  xy: 202, 31
+  size: 37, 37
+  orig: 37, 37
+  offset: 0, 0
+  index: -1
+play_button
+  rotate: false
+  xy: 2, 2
+  size: 80, 80
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+subtitle
+  rotate: false
+  xy: 84, 70
+  size: 134, 12
+  orig: 134, 12
+  offset: 0, 0
+  index: -1
+title
+  rotate: false
+  xy: 84, 38
+  size: 116, 30
+  orig: 116, 30
+  offset: 0, 0
+  index: -1
