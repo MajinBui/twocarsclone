@@ -18,9 +18,11 @@ public class TwoCarsClone extends Game implements ApplicationListener {
 	@Override
 	public void create () {
 		Gdx.app.setLogLevel(Application.LOG_DEBUG);
-		Gdx.app.log(TAG, "Initializing game objects");
+        Gdx.app.setLogLevel(Application.LOG_NONE);
+        Gdx.app.log(TAG, "Initializing game objects");
 		Assets.instance.init(new AssetManager());
-
+		Assets.instance.music.bg_music.setLooping(true);
+		Assets.instance.music.bg_music.play();
 		setScreen(new MenuScreen(this));
 	}
 }

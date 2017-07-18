@@ -36,6 +36,7 @@ public class SquareToken extends AbstractToken {
     }
 
     public int getScore() {
+        Assets.instance.sounds.square_collected.play();
         setBlinkSchedule();
         return 0;
     }

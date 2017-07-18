@@ -34,6 +34,7 @@ public class CircleToken extends AbstractToken {
         setBlinkSchedule();
     }
     public int getScore() {
+        Assets.instance.sounds.circle_collected.play();
         return 1;
     }
 }

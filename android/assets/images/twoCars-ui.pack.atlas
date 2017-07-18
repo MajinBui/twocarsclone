@@ -1,41 +1,68 @@
 
 twoCars-ui.pack.png
-size: 256,512
+size: 1024,1024
 format: RGBA8888
 filter: Nearest,Nearest
 repeat: none
+TwoVansTitle
+  rotate: false
+  xy: 604, 963
+  size: 182, 54
+  orig: 182, 54
+  offset: 0, 0
+  index: -1
 background
   rotate: false
-  xy: 2, 84
-  size: 240, 424
-  orig: 240, 424
+  xy: 2, 16
+  size: 600, 1001
+  orig: 600, 1001
   offset: 0, 0
   index: -1
 options_button
   rotate: false
-  xy: 202, 31
+  xy: 686, 924
   size: 37, 37
   orig: 37, 37
   offset: 0, 0
   index: -1
-play_button
+play_buttonOld
   rotate: false
-  xy: 2, 2
+  xy: 604, 881
+  size: 80, 80
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+play_buttonOld2
+  rotate: false
+  xy: 604, 799
   size: 80, 80
   orig: 80, 80
   offset: 0, 0
   index: -1
 subtitle
   rotate: false
-  xy: 84, 70
+  xy: 2, 2
   size: 134, 12
   orig: 134, 12
   offset: 0, 0
   index: -1
 title
   rotate: false
-  xy: 84, 38
+  xy: 788, 987
   size: 116, 30
   orig: 116, 30
+  offset: 0, 0
+  index: -1
+
+twoCars-ui.pack2.png
+size: 1024,256
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+play_button
+  rotate: false
+  xy: 2, 2
+  size: 599, 231
+  orig: 599, 231
   offset: 0, 0
   index: -1

@@ -8,11 +8,12 @@ import com.badlogic.gdx.tools.texturepacker.TexturePacker.Settings;
 
 public class DesktopLauncher {
 	private static boolean rebuildAtlas = false;
-	private static boolean drawDebugOutline = true;
+	private static boolean drawDebugOutline = false;
 
 	public static void main (String[] arg) {
+		Settings settings = new Settings();
+		settings.debug = drawDebugOutline;
 		if (rebuildAtlas) {
-			Settings settings = new Settings();
 			settings.maxWidth = 1024;
 			settings.maxHeight = 1024;
 			settings.duplicatePadding = false;
@@ -22,8 +23,8 @@ public class DesktopLauncher {
 		}
 
 		LwjglApplicationConfiguration config = new LwjglApplicationConfiguration();
-		config.width = 576;
-		config.height = 1024;
+		config.width = 468;
+		config.height = 832;
 		new LwjglApplication(new TwoCarsClone(), config);
 	}
 }

@@ -6,16 +6,16 @@ import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.GlyphLayout;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.utils.Align;
+import com.badlogic.gdx.utils.Disposable;
 import com.badlogic.gdx.utils.viewport.ExtendViewport;
 import com.badlogic.gdx.utils.viewport.Viewport;
 import com.mygdx.twocarsclone.util.Constants;
-import com.sun.media.jfxmediaimpl.MediaDisposer;
 
 /**
  * Created by Van on 2016-02-28.
  */
 
-public class WorldRenderer implements MediaDisposer.Disposable{
+public class WorldRenderer implements Disposable {
     public static final String TAG = WorldRenderer.class.getName();
     // Camera and viewports
     private OrthographicCamera cameraGUI;

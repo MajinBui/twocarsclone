@@ -17,6 +17,7 @@ import com.badlogic.gdx.scenes.scene2d.ui.Table;
 import com.badlogic.gdx.scenes.scene2d.ui.TextButton;
 import com.badlogic.gdx.scenes.scene2d.ui.Window;
 import com.badlogic.gdx.scenes.scene2d.utils.ChangeListener;
+import com.badlogic.gdx.utils.Align;
 import com.badlogic.gdx.utils.viewport.ExtendViewport;
 import com.badlogic.gdx.utils.viewport.FitViewport;
 import com.badlogic.gdx.utils.viewport.StretchViewport;
@@ -129,16 +130,21 @@ public class MenuScreen extends AbstractGameScreen {
     private Table buildLogosLayer () {
         Table layer = new Table();
         layer.top();
-        imgTitle = new Image(skinTwoCars, "title");
+        layer.padTop(200f);
+        imgTitle = new Image(skinTwoCars, "TwoVansTitle");
         layer.add(imgTitle);
         layer.row().expandY();
         imgSubtitle = new Image(skinTwoCars, "subtitle");
-        layer.add(imgSubtitle).bottom();
+//        layer.add(imgSubtitle).bottom();
         return layer;
     }
     private Table buildControlsLayer () {
         Table layer = new Table();
         btnMenuPlay = new Button(skinTwoCars, "play_button");
+        btnMenuPlay.setOrigin(Align.center);
+        btnMenuPlay.setTransform(true);
+        btnMenuPlay.setScale(0.20f, 0.20f);
+        btnMenuPlay.center();
         layer.add(btnMenuPlay);
         btnMenuPlay.addListener(new ChangeListener() {
             @Override
@@ -148,7 +154,7 @@ public class MenuScreen extends AbstractGameScreen {
         });
         layer.row();
         btnMenuOptions = new Button(skinTwoCars, "options_button");
-        layer.add(btnMenuOptions);
+        //layer.add(btnMenuOptions);
         btnMenuOptions.addListener(new ChangeListener() {
             @Override
             public void changed (ChangeEvent event, Actor actor) {

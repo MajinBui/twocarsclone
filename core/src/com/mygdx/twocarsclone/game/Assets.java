@@ -4,6 +4,7 @@ import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.assets.AssetDescriptor;
 import com.badlogic.gdx.assets.AssetErrorListener;
 import com.badlogic.gdx.assets.AssetManager;
+import com.badlogic.gdx.audio.Music;
 import com.badlogic.gdx.audio.Sound;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
@@ -48,6 +49,7 @@ public class Assets implements Disposable, AssetErrorListener {
         // SOund and music files
         assetManager.load("sounds/square_collected.wav", Sound.class);
         assetManager.load("sounds/circle_collected.wav", Sound.class);
+        assetManager.load("music/bg_music.wav", Music.class);
         // start loading assets and wait until finished
         assetManager.finishLoading();
         Gdx.app.debug(TAG, "# of assets loaded: "
@@ -71,6 +73,8 @@ public class Assets implements Disposable, AssetErrorListener {
         fonts = new AssetFonts();
 
         sounds = new AssetSounds(assetManager);
+        music = new AssetMusic(assetManager);
+
     }
 
     @Override
@@ -177,6 +181,10 @@ public class Assets implements Disposable, AssetErrorListener {
     }
 
     public class AssetMusic {
+        public final Music bg_music;
 
+        public AssetMusic(AssetManager am) {
+            bg_music = am.get("music/bg_music.wav", Music.class);
+        }
     }
 }
