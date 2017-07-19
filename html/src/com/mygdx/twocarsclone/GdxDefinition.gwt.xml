@@ -6,7 +6,8 @@
 
 	<inherits name='TwoCarsClone' />
 	<entry-point class='com.mygdx.twocarsclone.client.HtmlLauncher' />
-	
+
+	<set-configuration-property name='xsiframe.failIfScriptTag' value='FALSE'/>
 	<set-configuration-property name="gdx.assetpath" value="../android/assets" />
 
 	<extend-configuration-property
